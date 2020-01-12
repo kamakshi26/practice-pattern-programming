@@ -66,5 +66,32 @@ int main()
         printf("\n");
     }
 }
+Palindrome pyramid pattern using numbers and stars
+----------------------------------------------------------------------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+    int rows;
+    printf("enter row:\n");
+    scanf("%d",&rows);
+    for(int i=1;i<=rows;i++)
+    {
+        for(int j=9-i;j>=1;j--)
+        {
+            printf("*");
+        }
+        for(int j=1;j<=i;j++)
+        {
+            printf("%d",i);
+            if(i!=j)
+            printf("*");
+        }
+        for(int j=9-i;j>=1;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
 
 
